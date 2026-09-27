@@ -4,6 +4,6 @@ first_name,str,Employee first name,Direct identifier / PII,Not needed for most a
 last_name,str,Employee last name,Direct identifier / PII,Not needed for most analytical summaries,Remove unless the approved purpose requires a name
 hire_date,str,Employee hire date,Quasi-identifier,Parse and validate dates before analysis,Generalize or remove for broad sharing
 department,str,Employee department,Business attribute,Clarify valid categories and business definitions,Review disclosure risk when combined with other fields
-salary,str,Employee salary,Sensitive financial/business information,Convert to numeric and investigate missing or invalid values,Convert to numeric and investigate missing or invalid values. The value thirty needs to be red-flagged
-age,str,Employee age,Quasi-identifier,Convert to numeric and investigate impossible values,Group into ranges or remove for broad sharing
-full_time,str,Whether the employee works full time,Employment attribute,Clarify meaning and standardize valid values,Use only when relevant to the approved purpose
+salary,str,Employee salary,Sensitive financial/business information,Convert to numeric and investigate missing or invalid values.,Restrict access; aggregate for broad audiences
+age,str,Employee age,Quasi-identifier,"Convert to numeric and investigate impossible valuesThe value thirty needs to be red-flagged. If possible, wide group ranges may be approprate",Group into ranges or remove for broad sharing
+full_time,str, If employee is full time/part time,Employment attribute,Clarify meaning and standardize valid values,Use only when relevant to the approved purpose
